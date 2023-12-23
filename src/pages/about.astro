@@ -1,0 +1,54 @@
+---
+import PageLayout from "@/layouts/Base";
+import { careerPath } from "@/utils";
+
+const meta = {
+	title: "About",
+	description: "Introduce about my background",
+};
+---
+
+<PageLayout meta={meta}>
+	<div class="space-y-6">
+		<h1 class="title">About</h1>
+		<p>👋🏻 Hi, I'm Petch. Software Engineer from Thailand 🇹🇭.</p>
+
+		<p>
+			I'm currently the Software Engineer at LMWN company in Restaurant Solution team. mostly, I
+			contributed and maintained on the Wongnai merchant app (WMA) both of frontend and backend
+			part.
+		</p>
+		<p class="pt-2">Most of my free time I do the following:</p>
+		<ul class="list-inside list-decimal">
+			<li>Play a guitar</li>
+			<li>Play sports such as basketball or football</li>
+			<li>Read a book kind of self improvement</li>
+			<li>Care of cactus</li>
+			<li>Learning a new thing of code</li>
+		</ul>
+	</div>
+	<section class="mt-8">
+		<h1 class="title mb-4">Carreer Path</h1>
+		<ul class="relative list-none border-l border-gray-200 dark:border-gray-700">
+			{
+				careerPath.map((item) => {
+					return (
+						<li class="mb-10 ml-4">
+							<div class="absolute -left-1.5 mt-3.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 " />
+							<div class="pt-1.5 text-xl">{item.year}</div>
+							<h3 class="text-l my-4 font-semibold">{item.title}</h3>
+							<div class="mb-4 dark:text-gray-400" set:html={item.description} />
+						</li>
+					);
+				})
+			}
+		</ul>
+	</section>
+	<section class="mt-8">
+		<h1 class="title mb-4">My TechStack</h1>
+		<span>
+			JavaScript / TypeScript / HTML / CSS / React / React Native / Jest / Firebase / Golang / Java
+			(Springboot) / MySQL /REST / GraphQL / gRPC / Microservice / CI/CD / Kafka
+		</span>
+	</section>
+</PageLayout>
