@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+
+FIX ME: when deploy domain ->  Sitemap: https://astro-cactus.chriswilliams.dev/sitemap-index.xml

@@ -1,0 +1,163 @@
+---
+import ThemeToggle from "../ThemeToggle.astro";
+import Search from "../Search.astro";
+import { menuLinks } from "@/site-config";
+
+const url = new URL(Astro.request.url);
+---
+
+<header id="main-header" class="group relative mb-28 flex items-center sm:ps-[4.5rem]">
+	<div class="flex sm:flex-col">
+		<a
+			href="/"
+			class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
+			aria-current={url.pathname === "/" ? "page" : false}
+		>
+			<svg
+				class="me-3 h-10 w-6 sm:absolute sm:start-[-5.5rem] sm:me-0 sm:h-16 sm:w-16"
+				aria-hidden="true"
+				focusable="false"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 392.622 392.622"
+			>
+				<title>Logo</title>
+				<polygon style="fill:#56ACE0;" points="315.709,117.139 221.132,117.139 272.008,172.606 "
+				></polygon>
+				<polygon style="fill:#FFFFFF;" points="145.301,177.972 247.313,177.972 196.307,122.311 "
+				></polygon>
+				<g>
+					<polygon style="fill:#FFC10D;" points="295.604,177.972 363.612,177.972 336.267,126.19 	"
+					></polygon>
+					<polygon style="fill:#FFC10D;" points="257.334,199.758 135.863,199.758 196.631,352.194 	"
+					></polygon>
+				</g>
+				<g>
+					<polygon style="fill:#56ACE0;" points="227.596,333.317 356.113,199.758 280.865,199.758 	"
+					></polygon>
+					<polygon style="fill:#56ACE0;" points="171.483,117.139 76.905,117.139 120.606,172.606 	"
+					></polygon>
+					<polygon style="fill:#56ACE0;" points="36.501,199.758 166.117,334.545 112.396,199.758 	"
+					></polygon>
+				</g>
+				<polygon style="fill:#FFC10D;" points="97.01,177.972 56.348,126.19 29.002,177.972 "
+				></polygon>
+				<g>
+					<path
+						style="fill:#194F82;"
+						d="M391.346,183.725l-43.572-82.618c-1.875-3.556-5.56-5.818-9.632-5.818H54.602
+			c-4.008,0-7.758,2.263-9.632,5.818L1.269,183.725c-2.133,4.202-1.487,9.309,1.81,12.671l185.406,192.905
+			c4.719,4.461,11.313,4.396,15.774,0l185.406-192.905C392.833,193.034,393.479,187.927,391.346,183.725z M227.596,333.317
+			l53.269-133.689h75.184L227.596,333.317z M36.501,199.758h75.895l53.721,134.853L36.501,199.758z M171.483,117.139l-50.941,55.467
+			l-43.636-55.467H171.483z M315.709,117.139l-43.636,55.467l-50.941-55.467H315.709z M145.301,177.972l51.006-55.661l51.006,55.661
+			H145.301z M97.01,177.972H29.002l27.281-51.717L97.01,177.972z M257.334,199.758l-60.768,152.566l-60.768-152.566H257.334z
+			 M295.604,177.972l40.663-51.717l27.281,51.717H295.604L295.604,177.972z"
+					></path>
+					<path
+						style="fill:#194F82;"
+						d="M343.572,69.43l41.18-48.226c3.943-4.59,3.426-11.442-1.228-15.386
+			c-4.59-3.943-11.442-3.426-15.386,1.228l-41.18,48.226c-3.943,4.59-3.426,11.442,1.228,15.386
+			C333.616,75.184,340.081,73.244,343.572,69.43z"
+					></path>
+					<path
+						style="fill:#194F82;"
+						d="M49.043,69.43c3.491,3.814,9.956,5.689,15.386,1.228c4.59-3.943,5.107-10.796,1.228-15.386
+			L24.477,7.046c-3.943-4.59-10.796-5.107-15.386-1.228c-4.59,3.943-5.107,10.796-1.228,15.386L49.043,69.43z"
+					></path>
+					<path
+						style="fill:#194F82;"
+						d="M196.307,66.198c6.012,0,10.925-4.848,10.925-10.925V10.925C207.233,4.913,202.384,0,196.307,0
+			c-6.012,0-10.925,4.848-10.925,10.925v44.347C185.382,61.349,190.295,66.198,196.307,66.198z"
+					></path>
+				</g>
+			</svg>
+			<span class="text-xl font-bold sm:text-2xl">Kittichanr Blog</span>
+		</a>
+		<nav
+			id="navigation-menu"
+			class="absolute -inset-x-4 top-14 hidden flex-col items-end gap-y-4 rounded-md bg-bgColor/[.85] py-4 text-accent shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:-ms-4 sm:mt-1 sm:flex sm:flex-row sm:items-center sm:divide-x sm:divide-dashed sm:divide-accent sm:rounded-none sm:bg-transparent sm:py-0 sm:shadow-none sm:backdrop-blur-none"
+			aria-label="Main menu"
+		>
+			{
+				menuLinks.map((link) => (
+					<a
+						href={link.path}
+						class="px-4 py-4 sm:py-0 sm:hover:underline"
+						aria-current={url.pathname === link.path ? "page" : false}
+						data-astro-prefetch
+					>
+						{link.title}
+					</a>
+				))
+			}
+		</nav>
+	</div>
+	<Search />
+	<ThemeToggle />
+	<mobile-button>
+		<button
+			id="toggle-navigation-menu"
+			class="group relative ms-4 h-7 w-7 sm:invisible sm:hidden"
+			type="button"
+			aria-label="Open main menu"
+			aria-expanded="false"
+			aria-haspopup="menu"
+		>
+			<svg
+				id="line-svg"
+				class="absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 transition-all group-aria-expanded:scale-0 group-aria-expanded:opacity-0"
+				aria-hidden="true"
+				focusable="false"
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+			>
+				<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5"
+				></path>
+			</svg>
+			<svg
+				id="cross-svg"
+				class="absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 scale-0 text-accent opacity-0 transition-all group-aria-expanded:scale-100 group-aria-expanded:opacity-100"
+				class="text-accent"
+				aria-hidden="true"
+				focusable="false"
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="currentColor"
+			>
+				<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+			</svg>
+		</button>
+	</mobile-button>
+</header>
+
+<script>
+	import { toggleClass } from "@/utils";
+
+	class MobileNavBtn extends HTMLElement {
+		private headerEl: HTMLElement;
+		private mobileButtonEl: HTMLButtonElement;
+		private menuOpen: boolean;
+
+		constructor() {
+			super();
+			this.headerEl = document.getElementById("main-header")!;
+			this.mobileButtonEl = this.querySelector("button") as HTMLButtonElement;
+			this.menuOpen = false;
+
+			this.mobileButtonEl.addEventListener("click", this.toggleMobileMenu);
+		}
+
+		toggleMobileMenu = () => {
+			toggleClass(this.headerEl, "menu-open");
+			this.menuOpen = !this.menuOpen;
+			this.mobileButtonEl.setAttribute("aria-expanded", this.menuOpen.toString());
+		};
+	}
+
+	customElements.define("mobile-button", MobileNavBtn);
+</script>

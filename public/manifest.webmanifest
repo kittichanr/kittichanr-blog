@@ -1,0 +1,21 @@
+{
+	"name": "Kittichanr blog",
+	"short_name": "Kittichanr blog",
+	"description": "Kittichanr blog",
+	"icons": [
+		{
+			"src": "/192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"theme_color": "#2bbc8a",
+	"background_color": "#1d1f21",
+	"start_url": "/",
+	"display": "standalone"
+}
