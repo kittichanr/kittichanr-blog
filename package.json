@@ -1,33 +1,50 @@
 {
-  "name": "kittichanr-portfolio",
-  "private": false,
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "check": "astro check"
-  },
-  "dependencies": {
-    "@astrojs/rss": "^4.0.1",
-    "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/tailwind": "^5.0.4",
-    "astro": "^4.0.7",
-    "tailwindcss": "^3.4.0",
-    "typescript": "^5.3.3"
-  },
-  "devDependencies": {
-    "@astrojs/check": "^0.3.4",
-    "@resvg/resvg-js": "^2.6.0",
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/typography": "^0.5.10",
-    "@types/node": "^20.10.5",
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.32",
-    "postcss-html": "^1.5.0",
-    "postcss-import": "^15.1.0"
-  },
-  "packageManager": "pnpm@8.6.1"
+	"name": "kittichanr-portfolio",
+	"private": false,
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"check": "astro check",
+		"lint": "eslint . --ext .js,.jsx,.ts,.tsx,.astro",
+		"prettier": "prettier -w --cache . && prettier -w --cache **/*.astro",
+		"tsc": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@astrojs/rss": "^4.0.1",
+		"@astrojs/sitemap": "^3.0.3",
+		"@astrojs/tailwind": "^5.0.4",
+		"astro": "^4.0.7",
+		"tailwindcss": "^3.4.0",
+		"typescript": "^5.3.3"
+	},
+	"devDependencies": {
+		"@astrojs/check": "^0.3.4",
+		"@resvg/resvg-js": "^2.6.0",
+		"@tailwindcss/aspect-ratio": "^0.4.2",
+		"@tailwindcss/typography": "^0.5.10",
+		"@types/eslint": "^8.56.0",
+		"@types/node": "^20.10.5",
+		"@typescript-eslint/eslint-plugin": "^6.15.0",
+		"@typescript-eslint/parser": "^6.15.0",
+		"astro-eslint-parser": "^0.16.0",
+		"autoprefixer": "^10.4.16",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-plugin-astro": "^0.31.0",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-jsx-a11y": "^6.8.0",
+		"eslint-plugin-prettier": "^5.1.1",
+		"postcss": "^8.4.32",
+		"postcss-html": "^1.5.0",
+		"postcss-import": "^15.1.0",
+		"prettier": "^3.1.1",
+		"prettier-plugin-astro": "^0.12.2",
+		"prettier-plugin-tailwindcss": "^0.5.9"
+	},
+	"packageManager": "pnpm@8.6.1"
 }
