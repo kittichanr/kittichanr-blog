@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+import { defineConfig, passthroughImageService } from "astro/config";
 import fs from "fs";
 import mdx from "@astrojs/mdx";
 import tailwind from "@astrojs/tailwind";
@@ -28,6 +28,11 @@ export default defineConfig({
 		}),
 		sitemap(),
 	],
+	image: {
+		service: passthroughImageService(),
+		// FIXME: update astro version and use below config when release this version https://github.com/withastro/astro/pull/9463
+		// domains: ["webmention.io", "astro-cactus.chriswilliams.dev", "localhost"],
+	},
 	// https://docs.astro.build/en/guides/prefetch/
 	prefetch: true,
 	vite: {
