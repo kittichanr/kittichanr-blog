@@ -20,10 +20,6 @@ export const siteConfig: SiteConfig = {
 			year: "numeric",
 		},
 	},
-	webmentions: {
-		// FIXME: change link to my domain
-		link: "https://webmention.io/astro-cactus.chriswilliams.dev/webmention",
-	},
 };
 
 // Used to generate links in both the Header & Footer.
