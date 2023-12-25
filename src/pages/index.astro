@@ -1,6 +1,12 @@
 ---
 import SocialList from "@/components/SocialList";
 import PageLayout from "@/layouts/Base";
+import { getAllPosts, sortMDByDate } from "@/utils";
+import PostPreview from "@/components/blog/PostPreview";
+
+const MAX_POSTS = 10;
+const allPosts = await getAllPosts();
+const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 ---
 
 <PageLayout meta={{ title: "Home" }}>
@@ -21,5 +27,17 @@ import PageLayout from "@/layouts/Base";
 		<p class="mb-4">
 			"First, solve the problem. Then, write the code." - <b class="cactus-link">John Johnson</b>
 		</p>
+	</section>
+	<section aria-label="Blog post list" class="mt-16">
+		<h2 class="title mb-4 text-xl">Posts</h2>
+		<ul class="space-y-4 sm:space-y-2">
+			{
+				allPostsByDate.map((p) => (
+					<li class="flex flex-col gap-x-2 sm:flex-row">
+						<PostPreview post={p} />
+					</li>
+				))
+			}
+		</ul>
 	</section>
 </PageLayout>
