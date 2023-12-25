@@ -9,7 +9,7 @@ import { remarkReadingTime } from "./src/utils/remark-reading-time";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://astro-cactus.chriswilliams.dev/", // FIXME: when deploy
+	site: "https://kittichanr-blog.vercel.app/",
 	markdown: {
 		remarkPlugins: [remarkUnwrapImages, remarkReadingTime],
 		rehypePlugins: [
