@@ -6,6 +6,7 @@ import sitemap from "@astrojs/sitemap";
 import remarkUnwrapImages from "remark-unwrap-images";
 import rehypeExternalLinks from "rehype-external-links";
 import { remarkReadingTime } from "./src/utils/remark-reading-time";
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
@@ -41,6 +42,12 @@ export default defineConfig({
 			exclude: ["@resvg/resvg-js"],
 		},
 	},
+	output: "server",
+	adapter: vercel({
+		webAnalytics: {
+			enabled: true,
+		},
+	}),
 });
 
 function rawFonts(ext: Array<string>) {
