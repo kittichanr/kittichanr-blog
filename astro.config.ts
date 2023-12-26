@@ -6,7 +6,7 @@ import sitemap from "@astrojs/sitemap";
 import remarkUnwrapImages from "remark-unwrap-images";
 import rehypeExternalLinks from "rehype-external-links";
 import { remarkReadingTime } from "./src/utils/remark-reading-time";
-import vercel from "@astrojs/vercel/serverless";
+import vercel from "@astrojs/vercel/static";
 
 // https://astro.build/config
 export default defineConfig({
@@ -42,7 +42,7 @@ export default defineConfig({
 			exclude: ["@resvg/resvg-js"],
 		},
 	},
-	output: "server",
+	output: "static",
 	adapter: vercel({
 		webAnalytics: {
 			enabled: true,
