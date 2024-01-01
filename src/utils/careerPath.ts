@@ -7,7 +7,9 @@ export const careerPath = [
         <p>
             <ul class="list-inside list-disc -indent-5 ml-6">
                 <li class="leading-6">Design solution & implement change language app on aws s3</li>
-                <li class="leading-6">Implement & Provide API to Client in microservice, api-gateway</li>
+                <li class="leading-6">Implement & Provide API to Client in microservice (gPRC), api-gateway (Graphql)</li>
+                <li class="leading-6">Maintain project upgrade libs for prevent vulnerability</li>
+                <li class="leading-6">Monitoring issue with Grafana & Kibana</li>
             </ul>
         </p>
         `,
