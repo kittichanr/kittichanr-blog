@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/kittichanr/kittichanr-blog/compare/v1.1.1...v1.1.2) (2024-01-01)
+
+
+### Bug Fixes
+
+* empty commit ([328d36a](https://github.com/kittichanr/kittichanr-blog/commit/328d36a596f1726b638deabfb1e56784e36b50e2))
+
 ## [1.1.1](https://github.com/kittichanr/kittichanr-blog/compare/v1.1.0...v1.1.1) (2023-12-26)
 
 
