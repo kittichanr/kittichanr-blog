@@ -23,7 +23,7 @@
 		"@iconify-json/carbon": "^1.1.27",
 		"@iconify-json/mdi": "^1.1.64",
 		"astro": "^4.0.8",
-		"astro-icon": "^1.0.1",
+		"astro-icon": "^1.1.0",
 		"mdast-util-to-string": "^4.0.0",
 		"reading-time": "^1.5.0",
 		"rehype-external-links": "^3.0.0",
