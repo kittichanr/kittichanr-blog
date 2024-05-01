@@ -15,7 +15,7 @@
 		"tsc": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@astrojs/mdx": "^2.0.3",
+		"@astrojs/mdx": "^2.3.1",
 		"@astrojs/rss": "^4.0.5",
 		"@astrojs/sitemap": "^3.1.5",
 		"@astrojs/tailwind": "^5.1.0",
