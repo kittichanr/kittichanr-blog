@@ -26,10 +26,16 @@ jobs:
       - name: Install release-please
         run: npm install -g release-please
 
+      - name: Debug release-please inputs
+        run: |
+          echo "Repository: ${{ github.repository }}"
+          echo "Token: ${{ secrets.GITHUB_TOKEN }}"
+
       - name: Create release PR
         id: release_please
         run: release-please github-release \
           --token=${{ secrets.GITHUB_TOKEN }} \
+          --repo-url=${{ github.repository }} \
           --default-branch=main \
           --release-type=javascript
 
