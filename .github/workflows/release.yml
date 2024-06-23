@@ -25,6 +25,7 @@ jobs:
         with:
           token: ${{ github.token }}
           tag: ${{ github.ref_name }}
+          excludeTypes: build,docs,other,style,feat,fix,refactor
 
       - name: Create Release
         uses: ncipollo/release-action@v1.12.0
