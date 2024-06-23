@@ -6,9 +6,10 @@ on:
       - main
   workflow_dispatch:
 
-# permissions:
-#   contents: write
-#   pull-requests: write
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
 
 jobs:
   release:
@@ -25,11 +26,6 @@ jobs:
 
       - name: Install release-please
         run: npm install -g release-please
-
-      - name: Debug release-please inputs
-        run: |
-          echo "Repository: ${{ github.repository }}"
-          echo "Token: ${{ secrets.GITHUB_TOKEN }}"
 
       - name: Create release PR
         id: release_please
