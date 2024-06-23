@@ -30,7 +30,7 @@ jobs:
         id: release_please
         run: release-please github-release \
           --token=${{ secrets.GITHUB_TOKEN }} \
-          --repo-url=kittichanr/kittichanr-blog \
+          --repo-url=https://github.com/${{ github.repository }} \
           --default-branch=main \
           --release-type=javascript
 
