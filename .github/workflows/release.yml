@@ -20,9 +20,9 @@ jobs:
         with:
           node-version: 20
       - name: install
-        run: npm ci
+        run: pnpm ci
       - name: build
-        run: npm run build
+        run: pnpm run build
       - name: commit
         run: |-
           set -e
