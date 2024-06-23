@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.1](https://github.com/kittichanr/kittichanr-blog/compare/v1.4.0...v1.4.1) (2024-06-23)
+
+
+### Bug Fixes
+
+* fix .yml ([ab9a7f6](https://github.com/kittichanr/kittichanr-blog/commit/ab9a7f62ff5ed5b2ff4a0988a7cb9ceabbd22a96))
+* fix .yml ([8f4b2fa](https://github.com/kittichanr/kittichanr-blog/commit/8f4b2faa7097a788f3572cc381329a5b93fd2112))
+
 ## [1.1.2](https://github.com/kittichanr/kittichanr-blog/compare/v1.1.1...v1.1.2) (2024-01-01)
 
 
