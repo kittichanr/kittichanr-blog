@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/kittichanr/kittichanr-blog/compare/v1.4.1...v1.5.0) (2024-06-23)
+
+
+### Features
+
+* test release note ([ee341b6](https://github.com/kittichanr/kittichanr-blog/commit/ee341b682a303953026f6b65e7d7f1c5c988a98b))
+
 ## [1.4.1](https://github.com/kittichanr/kittichanr-blog/compare/v1.4.0...v1.4.1) (2024-06-23)
 
 
