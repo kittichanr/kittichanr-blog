@@ -1,17 +1,47 @@
+name: Release
+
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
   contents: write
   pull-requests: write
 
-name: release-please
-
 jobs:
-  release-please:
+  release:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: google-github-actions/release-please-action@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          node-version: "18"
+
+      - name: Install release-please
+        run: npm install -g release-please
+
+      - name: Create release PR
+        id: release_please
+        run: release-please github-release \
+          --token=${{ secrets.GITHUB_TOKEN }} \
+          --repo-url=${{ github.repository }} \
+          --default-branch=main \
+          --release-type=javascript
+
+      - name: Merge release PR
+        if: steps.release_please.outputs.release_created == 'true'
+        run: |
+          PR_NUMBER=$(gh pr list --repo ${{ github.repository }} --state open --author app/github-actions --json number --jq '.[0].number')
+          gh pr merge $PR_NUMBER --repo ${{ github.repository }} --merge --admin --delete-branch
+
+      - name: Create GitHub release
+        uses: google-github-actions/release-please-action@v4
+        with:
           release-type: node
+          token: ${{ secrets.GITHUB_TOKEN }}
