@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/kittichanr/kittichanr-blog/compare/v1.5.0...v1.5.1) (2024-06-28)
+
+
+### Bug Fixes
+
+* font in project ([6ecff5a](https://github.com/kittichanr/kittichanr-blog/commit/6ecff5a044b488321d390ddc57f851856fe6c889))
+
 ## [1.5.0](https://github.com/kittichanr/kittichanr-blog/compare/v1.4.1...v1.5.0) (2024-06-23)
 
 
