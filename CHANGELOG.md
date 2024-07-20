@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/kittichanr/kittichanr-blog/compare/v1.5.3...v1.6.0) (2024-07-20)
+
+
+### Features
+
+* add content go wire ([5144826](https://github.com/kittichanr/kittichanr-blog/commit/51448266b075de5a31e44aa0f9b8f5f59f44945d))
+
 ## [1.5.3](https://github.com/kittichanr/kittichanr-blog/compare/v1.5.2...v1.5.3) (2024-07-20)
 
 
