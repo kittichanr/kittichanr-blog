@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.3](https://github.com/kittichanr/kittichanr-blog/compare/v1.5.2...v1.5.3) (2024-07-20)
+
+
+### Bug Fixes
+
+* empty commit ([86b1691](https://github.com/kittichanr/kittichanr-blog/commit/86b1691a5102ccc995eccbf676db6b48486cf52a))
+
 ## [1.5.2](https://github.com/kittichanr/kittichanr-blog/compare/v1.5.1...v1.5.2) (2024-06-30)
 
 
