@@ -10,7 +10,7 @@ export const careerPath = [
                 <li class="leading-8">Implement & Provide API to Client in microservice (gPRC), api-gateway (Graphql)</li>
                 <li class="leading-8">Maintain project upgrade libs for prevent vulnerability</li>
                 <li class="leading-8">Monitoring issue with Grafana & Kibana</li>
-                <li class="leading-8">Setup tracing in Restaurant Solution Service to use traceid investigate error request in WMA App</li>
+                <li class="leading-8">Setup tracing in restaurant solution service to use traceid investigate error request in WMA App</li>
                 <li class="leading-8">Init automate fix version jira for QA team</li>
             </ul>
         </p>
