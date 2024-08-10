@@ -1,9 +1,9 @@
 export const careerPath = [
-    {
-        id: 0,
-        year: "Aug 2023 - present",
-        title: "LineMan Wongnai (Software Engineer, Backend)",
-        description: `
+	{
+		id: 0,
+		year: "Aug 2023 - Aug 2024",
+		title: "LineMan Wongnai (Software Engineer, Backend)",
+		description: `
         <p>
             <ul class="list-inside list-disc -indent-5 ml-6">
                 <li class="leading-8">Design solution & implement change language app on aws s3</li>
@@ -15,12 +15,12 @@ export const careerPath = [
             </ul>
         </p>
         `,
-    },
-    {
-        id: 1,
-        year: "2019 - 2023",
-        title: "LineMan Wongnai (Software Engineer, Mobile Developer React Native)",
-        description: `
+	},
+	{
+		id: 1,
+		year: "Aug 2019 - July 2023",
+		title: "LineMan Wongnai (Software Engineer, Mobile Developer React Native)",
+		description: `
         <p>
             <ul class="list-inside list-disc -indent-5 ml-6">
                 <li class="leading-8">Design and developed 3 mobile applications for merchant users using React Native Framework.</li>
@@ -35,16 +35,16 @@ export const careerPath = [
             </ul>
         </p>
         `,
-    },
-    {
-        id: 2,
-        year: "2018-2019",
-        title: "King Mongkut University of Technology Thonburi",
-        description: `
+	},
+	{
+		id: 2,
+		year: "2018-2019",
+		title: "King Mongkut University of Technology Thonburi",
+		description: `
         <p>
             <ul class="list-inside list-disc -indent-5 ml-6">
                 <li class="leading-8"> Senior Project: Eco-drive</li>
             </ul>
         </p>`,
-    },
+	},
 ];
