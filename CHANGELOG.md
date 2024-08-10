@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/kittichanr/kittichanr-blog/compare/v1.6.0...v1.6.1) (2024-08-10)
+
+
+### Bug Fixes
+
+* content my career path ([c45dbd8](https://github.com/kittichanr/kittichanr-blog/commit/c45dbd86c1d35faf6448857c7d1fb3603f35daf1))
+
 ## [1.6.0](https://github.com/kittichanr/kittichanr-blog/compare/v1.5.3...v1.6.0) (2024-07-20)
 
 
