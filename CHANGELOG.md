@@ -1,7 +1,6 @@
 # Changelog
 
-## [1.6.2](https://github.com/kittichanr/kittichanr-blog/compare/v1.6.1...v1.6.2) (2024-08-24)
-
+## [1.6.2](https://github.com/kittichanr/kittichanr-blog/compare/v1.6.1...v1.6.2) (2024-09-27)
 
 ### Bug Fixes
 
@@ -9,13 +8,11 @@
 
 ## [1.6.1](https://github.com/kittichanr/kittichanr-blog/compare/v1.6.0...v1.6.1) (2024-08-10)
 
-
 ### Bug Fixes
 
 * content my career path ([c45dbd8](https://github.com/kittichanr/kittichanr-blog/commit/c45dbd86c1d35faf6448857c7d1fb3603f35daf1))
 
 ## [1.6.0](https://github.com/kittichanr/kittichanr-blog/compare/v1.5.3...v1.6.0) (2024-07-20)
-
 
 ### Features
 
@@ -23,13 +20,11 @@
 
 ## [1.5.3](https://github.com/kittichanr/kittichanr-blog/compare/v1.5.2...v1.5.3) (2024-07-20)
 
-
 ### Bug Fixes
 
 * empty commit ([86b1691](https://github.com/kittichanr/kittichanr-blog/commit/86b1691a5102ccc995eccbf676db6b48486cf52a))
 
 ## [1.5.2](https://github.com/kittichanr/kittichanr-blog/compare/v1.5.1...v1.5.2) (2024-06-30)
-
 
 ### Bug Fixes
 
@@ -37,20 +32,17 @@
 
 ## [1.5.1](https://github.com/kittichanr/kittichanr-blog/compare/v1.5.0...v1.5.1) (2024-06-28)
 
-
 ### Bug Fixes
 
 * font in project ([6ecff5a](https://github.com/kittichanr/kittichanr-blog/commit/6ecff5a044b488321d390ddc57f851856fe6c889))
 
 ## [1.5.0](https://github.com/kittichanr/kittichanr-blog/compare/v1.4.1...v1.5.0) (2024-06-23)
 
-
 ### Features
 
 * test release note ([ee341b6](https://github.com/kittichanr/kittichanr-blog/commit/ee341b682a303953026f6b65e7d7f1c5c988a98b))
 
 ## [1.4.1](https://github.com/kittichanr/kittichanr-blog/compare/v1.4.0...v1.4.1) (2024-06-23)
-
 
 ### Bug Fixes
 
@@ -59,13 +51,11 @@
 
 ## [1.1.2](https://github.com/kittichanr/kittichanr-blog/compare/v1.1.1...v1.1.2) (2024-01-01)
 
-
 ### Bug Fixes
 
 * empty commit ([328d36a](https://github.com/kittichanr/kittichanr-blog/commit/328d36a596f1726b638deabfb1e56784e36b50e2))
 
 ## [1.1.1](https://github.com/kittichanr/kittichanr-blog/compare/v1.1.0...v1.1.1) (2023-12-26)
-
 
 ### Bug Fixes
 
@@ -73,12 +63,10 @@
 
 ## [1.1.0](https://github.com/kittichanr/kittichanr-blog/compare/v1.0.0...v1.1.0) (2023-12-26)
 
-
 ### Features
 
 * add vercel analytics ([f4ab4d3](https://github.com/kittichanr/kittichanr-blog/commit/f4ab4d3a5e7e4ca80c8a463049106e82db6a80ef))
 * Create release.yml ([d0f4fc5](https://github.com/kittichanr/kittichanr-blog/commit/d0f4fc5ffe5086071f64b9e6fed9c6a3797c3254))
-
 
 ### Bug Fixes
 
@@ -91,12 +79,10 @@
 
 ## [1.1.0](https://github.com/kittichanr/kittichanr-blog/compare/v1.0.0...v1.1.0) (2023-12-26)
 
-
 ### Features
 
 * add vercel analytics ([f4ab4d3](https://github.com/kittichanr/kittichanr-blog/commit/f4ab4d3a5e7e4ca80c8a463049106e82db6a80ef))
 * Create release.yml ([d0f4fc5](https://github.com/kittichanr/kittichanr-blog/commit/d0f4fc5ffe5086071f64b9e6fed9c6a3797c3254))
-
 
 ### Bug Fixes
 
