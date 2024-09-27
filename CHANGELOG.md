@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.3](https://github.com/kittichanr/kittichanr-blog/compare/v1.6.2...v1.6.3) (2024-09-27)
+
+
+### Bug Fixes
+
+* update dependencies ([07c0018](https://github.com/kittichanr/kittichanr-blog/commit/07c001842016e94309e1bd385d697b99baa7001f))
+
 ## [1.6.2](https://github.com/kittichanr/kittichanr-blog/compare/v1.6.1...v1.6.2) (2024-09-27)
 
 ### Bug Fixes
