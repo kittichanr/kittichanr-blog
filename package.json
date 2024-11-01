@@ -20,7 +20,7 @@
 		"@astrojs/sitemap": "^3.1.6",
 		"@astrojs/tailwind": "^5.1.0",
 		"@astrojs/vercel": "^7.8.1",
-		"@iconify-json/carbon": "^1.2.1",
+		"@iconify-json/carbon": "^1.2.4",
 		"astro": "^4.15.9",
 		"astro-icon": "^1.1.0",
 		"mdast-util-to-string": "^4.0.0",
