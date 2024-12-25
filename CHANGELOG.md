@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.4](https://github.com/kittichanr/kittichanr-blog/compare/v1.6.3...v1.6.4) (2024-12-25)
+
+
+### Bug Fixes
+
+* update dependencies ([4a7240c](https://github.com/kittichanr/kittichanr-blog/commit/4a7240c3f2dbea40a089c487ec4bc266e41eb799))
+
 ## [1.6.3](https://github.com/kittichanr/kittichanr-blog/compare/v1.6.2...v1.6.3) (2024-09-27)
 
 
