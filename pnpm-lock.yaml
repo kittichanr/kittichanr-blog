@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/mdx':
     specifier: ^3.1.5
-    version: 3.1.9(astro@4.16.16)
+    version: 3.1.9(astro@4.16.18)
   '@astrojs/rss':
     specifier: ^4.0.7
     version: 4.0.9
@@ -16,16 +16,16 @@ dependencies:
     version: 3.2.1
   '@astrojs/tailwind':
     specifier: ^5.1.0
-    version: 5.1.2(astro@4.16.16)(tailwindcss@3.4.15)
+    version: 5.1.2(astro@4.16.18)(tailwindcss@3.4.15)
   '@astrojs/vercel':
     specifier: ^7.8.1
-    version: 7.8.2(astro@4.16.16)
+    version: 7.8.2(astro@4.16.18)
   '@iconify-json/carbon':
     specifier: ^1.2.1
     version: 1.2.4
   astro:
-    specifier: ^4.15.9
-    version: 4.16.16(@types/node@22.10.1)(typescript@5.7.2)
+    specifier: ^4.16.18
+    version: 4.16.18(@types/node@22.10.1)(typescript@5.7.2)
   astro-icon:
     specifier: ^1.1.0
     version: 1.1.4
@@ -246,7 +246,7 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/mdx@3.1.9(astro@4.16.16):
+  /@astrojs/mdx@3.1.9(astro@4.16.18):
     resolution: {integrity: sha512-3jPD4Bff6lIA20RQoonnZkRtZ9T3i0HFm6fcDF7BMsKIZ+xBP2KXzQWiuGu62lrVCmU612N+SQVGl5e0fI+zWg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
@@ -255,7 +255,7 @@ packages:
       '@astrojs/markdown-remark': 5.3.0
       '@mdx-js/mdx': 3.1.0(acorn@8.14.0)
       acorn: 8.14.0
-      astro: 4.16.16(@types/node@22.10.1)(typescript@5.7.2)
+      astro: 4.16.18(@types/node@22.10.1)(typescript@5.7.2)
       es-module-lexer: 1.5.4
       estree-util-visit: 2.0.0
       gray-matter: 4.0.3
@@ -293,13 +293,13 @@ packages:
       zod: 3.23.8
     dev: false
 
-  /@astrojs/tailwind@5.1.2(astro@4.16.16)(tailwindcss@3.4.15):
+  /@astrojs/tailwind@5.1.2(astro@4.16.18)(tailwindcss@3.4.15):
     resolution: {integrity: sha512-IvOF0W/dtHElcXvhrPR35nHmhyV3cfz1EzPitMGtU7sYy9Hci3BNK1To6FWmVuuNKPxza1IgCGetSynJZL7fOg==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0 || ^5.0.0-beta.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.16.16(@types/node@22.10.1)(typescript@5.7.2)
+      astro: 4.16.18(@types/node@22.10.1)(typescript@5.7.2)
       autoprefixer: 10.4.20(postcss@8.4.49)
       postcss: 8.4.49
       postcss-load-config: 4.0.2(postcss@8.4.49)
@@ -323,7 +323,7 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/vercel@7.8.2(astro@4.16.16):
+  /@astrojs/vercel@7.8.2(astro@4.16.18):
     resolution: {integrity: sha512-U2JsfN0LzFMX5CPrcb+5bAAyqyYURP6Dk/mUIXX87r5x4baQy+juU+ntvf926YA0tR7u6jPRXHymE2axQ/l3NQ==}
     peerDependencies:
       astro: ^4.2.0
@@ -332,7 +332,7 @@ packages:
       '@vercel/analytics': 1.4.1
       '@vercel/edge': 1.1.2
       '@vercel/nft': 0.27.7
-      astro: 4.16.16(@types/node@22.10.1)(typescript@5.7.2)
+      astro: 4.16.18(@types/node@22.10.1)(typescript@5.7.2)
       esbuild: 0.21.5
       fast-glob: 3.3.2
       web-vitals: 3.5.2
@@ -2260,8 +2260,8 @@ packages:
       - supports-color
     dev: false
 
-  /astro@4.16.16(@types/node@22.10.1)(typescript@5.7.2):
-    resolution: {integrity: sha512-H1CttrV6+JFrDBQx0Mcbq5i5AeLhCbztB786+9wEu3svWL/QPNeCGqF0dgNORAYmP+rODGCPu/y9qKSh87iLuA==}
+  /astro@4.16.18(@types/node@22.10.1)(typescript@5.7.2):
+    resolution: {integrity: sha512-G7zfwJt9BDHEZwlaLNvjbInIw2hPryyD654314KV/XT34pJU6SfN1S+mWa8RAkALcZNJnJXCJmT3JXLQStD3Lw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
     dependencies:
