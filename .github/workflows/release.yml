@@ -22,7 +22,9 @@ jobs:
           node-version: "16"
 
       - name: Install Dependencies
-        run: pnpm install
+        run: |
+          npm add -g pnpm
+          pnpm install
 
       - name: Bump Version and Update Changelog
         run: pnpm exec standard-version
