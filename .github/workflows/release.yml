@@ -1,34 +1,45 @@
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch:
+    tags:
+      - "v*"
 
 permissions:
   contents: write
   pull-requests: write
 
-name: release-please
+name: Bump Version and Update Changelog
 jobs:
-  release-please:
+  update-version:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: googleapis/release-please-action@v4
-        id: release
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          release-type: node
-      - uses: actions/checkout@v4
-      - name: tag major and minor versions
-        if: ${{ steps.release.outputs.release_created }}
+          node-version: "18"
+          cache: "npm"
+
+      - name: Update package.json version
         run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git remote add gh-token "https://${{ secrets.GITHUB_TOKEN }}@github.com/googleapis/release-please-action.git"
-          git tag -d v${{ steps.release.outputs.major }} || true
-          git tag -d v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} || true
-          git push origin :v${{ steps.release.outputs.major }} || true
-          git push origin :v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} || true
-          git tag -a v${{ steps.release.outputs.major }} -m "Release v${{ steps.release.outputs.major }}"
-          git tag -a v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }} -m "Release v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}"
-          git push origin v${{ steps.release.outputs.major }}
-          git push origin v${{ steps.release.outputs.major }}.${{ steps.release.outputs.minor }}
+          NEW_VERSION=${GITHUB_REF_NAME}
+          echo "Updating version in package.json to $NEW_VERSION"
+          npm version --no-git-tag-version ${NEW_VERSION#v}
+
+      - name: Update CHANGELOG.md
+        run: |
+          echo "## ${GITHUB_REF_NAME} - $(date +'%Y-%m-%d')" >> CHANGELOG.md
+          git log $(git describe --tags --abbrev=0)^..HEAD --pretty=format:"- %s" >> CHANGELOG.md
+          echo "\n" >> CHANGELOG.md
+
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add package.json CHANGELOG.md
+          git commit -m "chore(release): bump version to ${NEW_VERSION} and update changelog"
+          git push origin HEAD
