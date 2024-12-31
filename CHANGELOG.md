@@ -1,8 +1,8 @@
 # Changelog
 
-## [v1.6.11]
+## [Unreleased]
 
-## [v.1.6.10]
+## [v1.6.11]
 
 ### Fixed
 
