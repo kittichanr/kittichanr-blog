@@ -1,5 +1,9 @@
 name: Tag and Release Workflow
 
+permissions:
+  contents: write
+  pull-requests: write
+
 on:
   pull_request:
     types:

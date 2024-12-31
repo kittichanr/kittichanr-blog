@@ -1,5 +1,9 @@
 name: Update version and create Release's PR Workflow
 
+permissions:
+  contents: write
+  pull-requests: write
+
 on:
   workflow_dispatch:
     inputs:
@@ -42,17 +46,6 @@ jobs:
         id: update_changelog
         run: |
           sed -i 's/Unreleased/${{ steps.update_version.outputs.version }}/g' CHANGELOG.md
-
-      - name: Create release branch
-        run: |
-          # Create the release branch from main
-          git checkout main
-          git pull origin main
-          git checkout -b release/${{ steps.update_version.outputs.version }}
-
-      - name: Push release branch
-        run: |
-          git push origin release/${{ steps.update_version.outputs.version }}
 
       - name: Create pull request
         id: create_pr
