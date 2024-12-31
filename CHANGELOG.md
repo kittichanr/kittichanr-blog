@@ -1,16 +1,16 @@
-# Changelog
+### CHANGELOG
+
+## [Unreleased]
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 ### [1.6.7](https://github.com/kittichanr/kittichanr-blog/compare/v1.6.5...v1.6.7) (2024-12-31)
-
 
 ### Bug Fixes
 
 * empty commit ([420a6d6](https://github.com/kittichanr/kittichanr-blog/commit/420a6d657b9dd7faba6096289d4b3e973ed03e0f))
 
 ### [1.6.6](https://github.com/kittichanr/kittichanr-blog/compare/v1.6.5...v1.6.6) (2024-12-31)
-
 
 ### Bug Fixes
 
@@ -20,13 +20,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.6.4](https://github.com/kittichanr/kittichanr-blog/compare/v1.6.3...v1.6.4) (2024-12-25)
 
-
 ### Bug Fixes
 
 * update dependencies ([4a7240c](https://github.com/kittichanr/kittichanr-blog/commit/4a7240c3f2dbea40a089c487ec4bc266e41eb799))
 
 ## [1.6.3](https://github.com/kittichanr/kittichanr-blog/compare/v1.6.2...v1.6.3) (2024-09-27)
-
 
 ### Bug Fixes
 
