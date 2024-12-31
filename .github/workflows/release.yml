@@ -22,11 +22,14 @@ jobs:
           node-version: "18"
           cache: "pnpm"
 
+      - name: Install pnpm
+        run: npm install -g pnpm
+
       - name: Update package.json version
         run: |
-          NEW_VERSION=${GITHUB_REF_NAME}
+          NEW_VERSION=${GITHUB_REF_NAME#v}
           echo "Updating version in package.json to $NEW_VERSION"
-          pnpm version --no-git-tag-version ${NEW_VERSION#v}
+          pnpm version $NEW_VERSION --no-git-tag-version
 
       - name: Update CHANGELOG.md
         run: |
@@ -41,5 +44,5 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add package.json CHANGELOG.md
-          git commit -m "chore(release): bump version to ${NEW_VERSION} and update changelog"
+          git commit -m "chore(release): release ${NEW_VERSION}"
           git push origin HEAD
