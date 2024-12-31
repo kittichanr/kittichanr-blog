@@ -20,13 +20,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18"
-          cache: "npm"
+          cache: "pnpm"
 
       - name: Update package.json version
         run: |
           NEW_VERSION=${GITHUB_REF_NAME}
           echo "Updating version in package.json to $NEW_VERSION"
-          npm version --no-git-tag-version ${NEW_VERSION#v}
+          pnpm version --no-git-tag-version ${NEW_VERSION#v}
 
       - name: Update CHANGELOG.md
         run: |
