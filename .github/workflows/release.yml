@@ -27,7 +27,7 @@ jobs:
           pnpm install
 
       - name: Bump Version and Update Changelog
-        run: pnpm exec standard-version
+        run: npx standard-version
 
       - name: Commit Changes
         run: |
