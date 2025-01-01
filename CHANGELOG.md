@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.2](https://github.com/kittichanr/kittichanr-blog/compare/v1.8.1...v1.8.2) (2025-01-01)
+
+
+### Bug Fixes
+
+* update script ([dae6820](https://github.com/kittichanr/kittichanr-blog/commit/dae6820896d154f8689cface58fde3ba4d4c929d))
+
 ## [1.8.1](https://github.com/kittichanr/kittichanr-blog/compare/v1.8.0...v1.8.1) (2025-01-01)
 
 
