@@ -2,9 +2,10 @@
     "include-component-in-tag": false,
     "include-v-in-tag": true,
     "separate-pull-requests": true,
-    "release-type": "node",
     "packages": {
-        "path/to/pkg": {}
+        ".": {
+            "release-type": "node"
+        }
     },
     "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
   }
