@@ -1,6 +1,7 @@
 {
     "include-component-in-tag": false,
     "include-v-in-tag": true,
+    "tag-separator": "@",
     "packages": {
         ".": {
             "release-type": "node"
