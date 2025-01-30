@@ -1,6 +1,22 @@
 export const careerPath = [
 	{
 		id: 0,
+		year: "Sep 2024 - Present",
+		title: "BeDee Powered by BDMS (Fullstack Developer)",
+		description: `
+        <p>
+            <ul class="list-inside list-disc -indent-5 ml-6">
+                <li class="leading-8">Developed and enhanced features like Health Passbook and O2O Appointment using React Native.</li>
+                <li class="leading-8">Integrated liveness detection and face recognition APIs for eKYC solutions.</li>
+                <li class="leading-8">Improved backend services for finance reporting using NestJS.</li>
+                <li class="leading-8">Enhanced and resolved bugs in corporate web applications using Next.js.</li>
+                <li class="leading-8">Prototyped and experimented with a sandbox application project using Flutter.</li>
+            </ul>
+        </p>
+        `,
+	},
+	{
+		id: 1,
 		year: "Aug 2023 - Aug 2024",
 		title: "LineMan Wongnai (Software Engineer, Backend)",
 		description: `
@@ -17,7 +33,7 @@ export const careerPath = [
         `,
 	},
 	{
-		id: 1,
+		id: 2,
 		year: "Aug 2019 - July 2023",
 		title: "LineMan Wongnai (Software Engineer, Mobile Developer React Native)",
 		description: `
@@ -37,7 +53,7 @@ export const careerPath = [
         `,
 	},
 	{
-		id: 2,
+		id: 3,
 		year: "2018-2019",
 		title: "King Mongkut University of Technology Thonburi",
 		description: `
