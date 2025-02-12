@@ -57,8 +57,6 @@
 </theme-toggle>
 
 <script>
-	import { rootHasDarkClass } from "@/utils";
-
 	class ThemeToggle extends HTMLElement {
 		private button: HTMLButtonElement;
 		private observer: MutationObserver | null;
@@ -69,7 +67,7 @@
 			this.observer = null;
 
 			// set inital aria-pressed value
-			this.button.setAttribute("aria-pressed", String(rootHasDarkClass()));
+			this.button.setAttribute("aria-pressed", String(document.documentElement.classList.contains("dark")));
 
 			// button clicked, fire event
 			this.button.addEventListener("click", this.handleThemeBtnClick);
@@ -95,7 +93,7 @@
 		}
 
 		handleThemeBtnClick = () => {
-			let isDark = rootHasDarkClass();
+			let isDark = document.documentElement.classList.contains("dark");
 
 			// invert theme
 			let themeChangeEvent = new CustomEvent("theme-change", {

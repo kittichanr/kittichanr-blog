@@ -136,8 +136,6 @@ const url = new URL(Astro.request.url);
 </header>
 
 <script>
-	import { toggleClass } from "@/utils";
-
 	class MobileNavBtn extends HTMLElement {
 		private headerEl: HTMLElement;
 		private mobileButtonEl: HTMLButtonElement;
@@ -153,7 +151,7 @@ const url = new URL(Astro.request.url);
 		}
 
 		toggleMobileMenu = () => {
-			toggleClass(this.headerEl, "menu-open");
+			this.headerEl.classList.toggle("menu-open");
 			this.menuOpen = !this.menuOpen;
 			this.mobileButtonEl.setAttribute("aria-expanded", this.menuOpen.toString());
 		};

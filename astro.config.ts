@@ -6,7 +6,7 @@ import sitemap from "@astrojs/sitemap";
 import remarkUnwrapImages from "remark-unwrap-images";
 import rehypeExternalLinks from "rehype-external-links";
 import { remarkReadingTime } from "./src/utils/remark-reading-time";
-import vercel from "@astrojs/vercel/static";
+import vercel from "@astrojs/vercel";
 import icon from "astro-icon";
 
 // https://astro.build/config
