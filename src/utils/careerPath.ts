@@ -1,7 +1,7 @@
 export const careerPath = [
 	{
 		id: 0,
-		year: "May 2025 - Present",
+		year: "May 2025 - April 2026",
 		title: "Kryptodian (Fullstack Developer)",
 		description: `
         <p>
