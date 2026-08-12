@@ -15,8 +15,8 @@ dependencies:
     specifier: ^8.0.6
     version: 8.0.6(astro@5.2.5)
   '@iconify-json/carbon':
-    specifier: ^1.2.5
-    version: 1.2.5
+    specifier: ^1.2.22
+    version: 1.2.22
   astro:
     specifier: ^5.2.5
     version: 5.2.5(@types/node@22.13.1)(typescript@5.7.3)
@@ -934,8 +934,8 @@ packages:
     engines: {node: '>=18.18'}
     dev: true
 
-  /@iconify-json/carbon@1.2.5:
-    resolution: {integrity: sha512-aI3TEzOrUDGhs74zIT3ym/ZQBUEziyu8JifntX2Hb4siVzsP5sQ/QEfVdmcCUj37kQUYT3TYBSeAw2vTfCJx9w==}
+  /@iconify-json/carbon@1.2.22:
+    resolution: {integrity: sha512-x/L1tVgBp6ailSU0b8QDlxM3MLLbrmzefoqOt1gpBbywTF3xNSKDcL/PrOoLGZHwoFsNXujg2xrCvYsAWpykgA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
