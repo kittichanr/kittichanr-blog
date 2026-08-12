@@ -77,8 +77,8 @@ devDependencies:
     specifier: ^9.20.1
     version: 9.20.1
   eslint-config-prettier:
-    specifier: ^10.0.1
-    version: 10.0.1(eslint@9.20.1)
+    specifier: ^10.1.8
+    version: 10.1.8(eslint@9.20.1)
   eslint-import-resolver-typescript:
     specifier: ^3.7.0
     version: 3.7.0(eslint-plugin-import@2.29.1)(eslint@9.20.1)
@@ -93,7 +93,7 @@ devDependencies:
     version: 6.9.0(eslint@9.20.1)
   eslint-plugin-prettier:
     specifier: ^5.2.3
-    version: 5.2.3(@types/eslint@9.6.0)(eslint-config-prettier@10.0.1)(eslint@9.20.1)(prettier@3.4.2)
+    version: 5.2.3(@types/eslint@9.6.0)(eslint-config-prettier@10.1.8)(eslint@9.20.1)(prettier@3.4.2)
   postcss:
     specifier: ^8.5.2
     version: 8.5.2
@@ -3148,8 +3148,8 @@ packages:
       semver: 7.8.1
     dev: true
 
-  /eslint-config-prettier@10.0.1(eslint@9.20.1):
-    resolution: {integrity: sha512-lZBts941cyJyeaooiKxAtzoPHTN+GbQTJFAIdQbRhA4/8whaAraEh47Whw/ZFfrjNSnlAxqfm9i0XVAEkULjCw==}
+  /eslint-config-prettier@10.1.8(eslint@9.20.1):
+    resolution: {integrity: sha512-82GZUjRS0p/jganf6q1rEO25VSoHH0hKPCTrgillPjdI/3bgBhAE1QzHrHTizjpRvy6pGAvKjDJtk2pF9NDq8w==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -3303,7 +3303,7 @@ packages:
       string.prototype.includes: 2.0.1
     dev: true
 
-  /eslint-plugin-prettier@5.2.3(@types/eslint@9.6.0)(eslint-config-prettier@10.0.1)(eslint@9.20.1)(prettier@3.4.2):
+  /eslint-plugin-prettier@5.2.3(@types/eslint@9.6.0)(eslint-config-prettier@10.1.8)(eslint@9.20.1)(prettier@3.4.2):
     resolution: {integrity: sha512-qJ+y0FfCp/mQYQ/vWQ3s7eUlFEL4PyKfAJxsnYTJ4YT73nsJBWqmEpFryxV9OeUiqmsTsYJ5Y+KDNaeP31wrRw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -3319,7 +3319,7 @@ packages:
     dependencies:
       '@types/eslint': 9.6.0
       eslint: 9.20.1
-      eslint-config-prettier: 10.0.1(eslint@9.20.1)
+      eslint-config-prettier: 10.1.8(eslint@9.20.1)
       prettier: 3.4.2
       prettier-linter-helpers: 1.0.1
       synckit: 0.9.3
