@@ -45,7 +45,7 @@ dependencies:
 devDependencies:
   '@astrojs/check':
     specifier: ^0.9.1
-    version: 0.9.1(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.3)
+    version: 0.9.1(prettier-plugin-astro@0.14.1)(prettier@3.8.3)(typescript@5.7.3)
   '@iconify-json/mdi':
     specifier: ^1.2.3
     version: 1.2.3
@@ -93,7 +93,7 @@ devDependencies:
     version: 6.9.0(eslint@9.20.1)
   eslint-plugin-prettier:
     specifier: ^5.2.3
-    version: 5.2.3(@types/eslint@9.6.0)(eslint-config-prettier@10.0.1)(eslint@9.20.1)(prettier@3.4.2)
+    version: 5.2.3(@types/eslint@9.6.0)(eslint-config-prettier@10.0.1)(eslint@9.20.1)(prettier@3.8.3)
   postcss:
     specifier: ^8.5.2
     version: 8.5.2
@@ -104,14 +104,14 @@ devDependencies:
     specifier: ^16.1.0
     version: 16.1.0(postcss@8.5.2)
   prettier:
-    specifier: ^3.4.2
-    version: 3.4.2
+    specifier: ^3.8.3
+    version: 3.8.3
   prettier-plugin-astro:
     specifier: ^0.14.1
     version: 0.14.1
   prettier-plugin-tailwindcss:
     specifier: ^0.6.11
-    version: 0.6.11(prettier-plugin-astro@0.14.1)(prettier@3.4.2)
+    version: 0.6.11(prettier-plugin-astro@0.14.1)(prettier@3.8.3)
 
 packages:
 
@@ -130,13 +130,13 @@ packages:
     resolution: {integrity: sha512-Mex9nXf9vR6AhcXmMrlz/HVgYYZpVGJ6YlPgwl7UnaFpnshXs6EK/oa5Gpf3CzENMjkvEx2tQtntGnb7UtSTOQ==}
     dev: false
 
-  /@astrojs/check@0.9.1(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.3):
+  /@astrojs/check@0.9.1(prettier-plugin-astro@0.14.1)(prettier@3.8.3)(typescript@5.7.3):
     resolution: {integrity: sha512-VvN5ukVzg0IccKuZlI/pdsp4MSpHxWf9a36eOmS8Wpp+NM0MhJLYv3yvQC+qa472Kdf8DHEt/wmVZYwJUMFW+w==}
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
     dependencies:
-      '@astrojs/language-server': 2.16.10(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.3)
+      '@astrojs/language-server': 2.16.10(prettier-plugin-astro@0.14.1)(prettier@3.8.3)(typescript@5.7.3)
       chokidar: 3.6.0
       fast-glob: 3.3.3
       kleur: 4.1.5
@@ -158,7 +158,7 @@ packages:
     resolution: {integrity: sha512-M7rAge1n2+aOSxNvKUFa0u/KFn0W+sZy7EW91KOSERotm2Ti8qs+1K0xx3zbOxtAVrmJb5/J98eohVvvEqtNkw==}
     dev: false
 
-  /@astrojs/language-server@2.16.10(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.3):
+  /@astrojs/language-server@2.16.10(prettier-plugin-astro@0.14.1)(prettier@3.8.3)(typescript@5.7.3):
     resolution: {integrity: sha512-87VQ/5GSdHlRnUA+hGuerYyIGAj+9RbZmATyuKLEUePinUXhQ5YkRnRrHhOD9sSi5JOErLjrLkHnfZFEvGrV8w==}
     hasBin: true
     peerDependencies:
@@ -178,13 +178,13 @@ packages:
       '@volar/language-server': 2.4.28
       '@volar/language-service': 2.4.28
       muggle-string: 0.4.1
-      prettier: 3.4.2
+      prettier: 3.8.3
       prettier-plugin-astro: 0.14.1
       tinyglobby: 0.2.16
       volar-service-css: 0.0.70(@volar/language-service@2.4.28)
       volar-service-emmet: 0.0.70(@volar/language-service@2.4.28)
       volar-service-html: 0.0.70(@volar/language-service@2.4.28)
-      volar-service-prettier: 0.0.70(@volar/language-service@2.4.28)(prettier@3.4.2)
+      volar-service-prettier: 0.0.70(@volar/language-service@2.4.28)(prettier@3.8.3)
       volar-service-typescript: 0.0.70(@volar/language-service@2.4.28)
       volar-service-typescript-twoslash-queries: 0.0.70(@volar/language-service@2.4.28)
       volar-service-yaml: 0.0.70(@volar/language-service@2.4.28)
@@ -3303,7 +3303,7 @@ packages:
       string.prototype.includes: 2.0.1
     dev: true
 
-  /eslint-plugin-prettier@5.2.3(@types/eslint@9.6.0)(eslint-config-prettier@10.0.1)(eslint@9.20.1)(prettier@3.4.2):
+  /eslint-plugin-prettier@5.2.3(@types/eslint@9.6.0)(eslint-config-prettier@10.0.1)(eslint@9.20.1)(prettier@3.8.3):
     resolution: {integrity: sha512-qJ+y0FfCp/mQYQ/vWQ3s7eUlFEL4PyKfAJxsnYTJ4YT73nsJBWqmEpFryxV9OeUiqmsTsYJ5Y+KDNaeP31wrRw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -3320,7 +3320,7 @@ packages:
       '@types/eslint': 9.6.0
       eslint: 9.20.1
       eslint-config-prettier: 10.0.1(eslint@9.20.1)
-      prettier: 3.4.2
+      prettier: 3.8.3
       prettier-linter-helpers: 1.0.1
       synckit: 0.9.3
     dev: true
@@ -5444,11 +5444,11 @@ packages:
     engines: {node: ^14.15.0 || >=16.0.0}
     dependencies:
       '@astrojs/compiler': 2.13.1
-      prettier: 3.4.2
+      prettier: 3.8.3
       sass-formatter: 0.7.9
     dev: true
 
-  /prettier-plugin-tailwindcss@0.6.11(prettier-plugin-astro@0.14.1)(prettier@3.4.2):
+  /prettier-plugin-tailwindcss@0.6.11(prettier-plugin-astro@0.14.1)(prettier@3.8.3):
     resolution: {integrity: sha512-YxaYSIvZPAqhrrEpRtonnrXdghZg1irNg4qrjboCXrpybLWVs55cW2N3juhspVJiO0JBvYJT8SYsJpc8OQSnsA==}
     engines: {node: '>=14.21.3'}
     peerDependencies:
@@ -5503,14 +5503,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
     dependencies:
-      prettier: 3.4.2
+      prettier: 3.8.3
       prettier-plugin-astro: 0.14.1
-    dev: true
-
-  /prettier@3.4.2:
-    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
-    engines: {node: '>=14'}
-    hasBin: true
     dev: true
 
   /prettier@3.8.3:
@@ -6766,7 +6760,7 @@ packages:
       vscode-uri: 3.1.0
     dev: true
 
-  /volar-service-prettier@0.0.70(@volar/language-service@2.4.28)(prettier@3.4.2):
+  /volar-service-prettier@0.0.70(@volar/language-service@2.4.28)(prettier@3.8.3):
     resolution: {integrity: sha512-Z6BCFSpGVCd8BPAsZ785Kce1BGlWd5ODqmqZGVuB14MJvrR4+CYz6cDy4F+igmE1gMifqfvMhdgT8Aud4M5ngg==}
     peerDependencies:
       '@volar/language-service': ~2.4.0
@@ -6778,7 +6772,7 @@ packages:
         optional: true
     dependencies:
       '@volar/language-service': 2.4.28
-      prettier: 3.4.2
+      prettier: 3.8.3
       vscode-uri: 3.1.0
     dev: true
 
