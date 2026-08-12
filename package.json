@@ -28,7 +28,7 @@
 		"typescript": "^5.7.3"
 	},
 	"devDependencies": {
-		"@astrojs/check": "^0.9.1",
+		"@astrojs/check": "^0.9.9",
 		"@iconify-json/mdi": "^1.2.3",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@tailwindcss/typography": "^0.5.13",

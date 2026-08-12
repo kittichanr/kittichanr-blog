@@ -44,8 +44,8 @@ dependencies:
 
 devDependencies:
   '@astrojs/check':
-    specifier: ^0.9.1
-    version: 0.9.1(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.3)
+    specifier: ^0.9.9
+    version: 0.9.9(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.3)
   '@iconify-json/mdi':
     specifier: ^1.2.3
     version: 1.2.3
@@ -130,15 +130,14 @@ packages:
     resolution: {integrity: sha512-Mex9nXf9vR6AhcXmMrlz/HVgYYZpVGJ6YlPgwl7UnaFpnshXs6EK/oa5Gpf3CzENMjkvEx2tQtntGnb7UtSTOQ==}
     dev: false
 
-  /@astrojs/check@0.9.1(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.3):
-    resolution: {integrity: sha512-VvN5ukVzg0IccKuZlI/pdsp4MSpHxWf9a36eOmS8Wpp+NM0MhJLYv3yvQC+qa472Kdf8DHEt/wmVZYwJUMFW+w==}
+  /@astrojs/check@0.9.9(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.3):
+    resolution: {integrity: sha512-A5UW8uIuErLWEoRQvzgXpO1gTjUFtK8r7nU2Z7GewAMxUb7bPvpk11qaKKgxqXlHJWlAvaaxy+Xg28A6bmQ1Tg==}
     hasBin: true
     peerDependencies:
-      typescript: ^5.0.0
+      typescript: ^5.0.0 || ^6.0.0
     dependencies:
       '@astrojs/language-server': 2.16.10(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.3)
-      chokidar: 3.6.0
-      fast-glob: 3.3.3
+      chokidar: 4.0.3
       kleur: 4.1.5
       typescript: 5.7.3
       yargs: 17.7.2
@@ -180,7 +179,7 @@ packages:
       muggle-string: 0.4.1
       prettier: 3.4.2
       prettier-plugin-astro: 0.14.1
-      tinyglobby: 0.2.16
+      tinyglobby: 0.2.17
       volar-service-css: 0.0.70(@volar/language-service@2.4.28)
       volar-service-emmet: 0.0.70(@volar/language-service@2.4.28)
       volar-service-html: 0.0.70(@volar/language-service@2.4.28)
@@ -2497,6 +2496,13 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.3
+
+  /chokidar@4.0.3:
+    resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
+    engines: {node: '>= 14.16.0'}
+    dependencies:
+      readdirp: 4.1.2
+    dev: true
 
   /chokidar@5.0.0:
     resolution: {integrity: sha512-TQMmc3w+5AxjpL8iIiwebF73dRDF4fBIieAqGn9RGCWaEVwQ6Fb2cGe31Yns0RRIzii5goJ1Y7xbMwo1TxMplw==}
@@ -5569,6 +5575,11 @@ packages:
     dependencies:
       picomatch: 2.3.2
 
+  /readdirp@4.1.2:
+    resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
+    engines: {node: '>= 14.18.0'}
+    dev: true
+
   /readdirp@5.0.0:
     resolution: {integrity: sha512-9u/XQ1pvrQtYyMpZe7DXKv2p5CNvyVwzUB6uhLAnQwHMSgKMBR62lc7AHljaeteeHXn11XTAaLLUVZYVZyuRBQ==}
     engines: {node: '>= 20.19.0'}
@@ -6199,7 +6210,7 @@ packages:
       lines-and-columns: 1.2.4
       mz: 2.7.0
       pirates: 4.0.7
-      tinyglobby: 0.2.16
+      tinyglobby: 0.2.17
       ts-interface-checker: 0.1.13
 
   /suf-log@2.5.3:
@@ -6314,8 +6325,8 @@ packages:
     engines: {node: '>=18'}
     dev: false
 
-  /tinyglobby@0.2.16:
-    resolution: {integrity: sha512-pn99VhoACYR8nFHhxqix+uvsbXineAasWm5ojXoN8xEwK5Kd3/TrhNn1wByuD52UxWRLy8pu+kRMniEi6Eq9Zg==}
+  /tinyglobby@0.2.17:
+    resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
     dependencies:
       fdir: 6.5.0(picomatch@4.0.4)
@@ -6707,7 +6718,7 @@ packages:
       picomatch: 4.0.4
       postcss: 8.5.15
       rollup: 4.60.4
-      tinyglobby: 0.2.16
+      tinyglobby: 0.2.17
     optionalDependencies:
       fsevents: 2.3.3
     dev: false
