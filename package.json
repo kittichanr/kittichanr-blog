@@ -31,7 +31,7 @@
 		"@astrojs/check": "^0.9.1",
 		"@iconify-json/mdi": "^1.2.3",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
-		"@tailwindcss/typography": "^0.5.13",
+		"@tailwindcss/typography": "^0.5.19",
 		"@types/eslint": "^9.6.0",
 		"@types/node": "^22.13.1",
 		"@typescript-eslint/eslint-plugin": "^8.24.0",
